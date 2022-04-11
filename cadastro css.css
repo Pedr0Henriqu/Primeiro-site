@@ -1,0 +1,219 @@
+.header{
+    background-color: white;
+}
+
+.header img{
+    width: 140px;
+    height: 100px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+    width: 600px;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.banner{
+    background-image: url(capa\ site.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 850px;
+    opacity: 0.9;
+}
+
+.banner .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .card{
+    background-color: transparent;
+    height: 480px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.form-box{
+    box-shadow: 10px 10px 10px 15px black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-bottom: 1px dashed black;
+    font-size: 20px;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    font-weight: 1000;
+    margin: 5px;
+    padding: 0;
+    font-size: 18px;
+}
+
+.css_input{
+    display: flex;
+    height: 50px;
+}
+
+.input_nome{
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px 0px black;
+    margin: auto;
+    height: 35px;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.input_email{
+    display: flex;
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px 0px black;
+    margin: auto;
+    height: 35px;
+    border-radius: 8px;
+    width: 95%;
+    font-size: 14px;
+}
+
+.input_senha{
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px 0px black;
+    margin: auto;
+    height: 35px;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.frase{
+    display: flex;
+    height: 20px;
+    width: 100%;
+}
+
+.frase h4{
+    height: 20px;
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+.css_select{
+    display: flex;
+    height: 50px;
+}
+
+.select_data{
+    box-shadow: 3px 3px 2px 0px black;
+    margin: auto;
+    height: 35px;
+    border-radius: 8px;
+    width: 135px;
+    font-size: 14px;
+}
+
+.css_sexo{
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+.botao{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.primeiro_botao{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: black ;
+    color: white;
+    font-weight: 1000;
+    border-radius: 8px;
+    height: 30px;
+    width: 150px;
+    box-shadow: 3px 3px 2px 0px black;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(capa\ site.jpg);   
+    background-color: white;
+    opacity: 0.9;
+    width: 100%;
+    height: 120px;
+}
+
+.footer p{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+.footer img{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}

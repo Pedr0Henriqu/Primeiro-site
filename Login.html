@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login css .css">
+    <link rel="icon" type="imagem/png" href="logo icone.png">
+    <title>SafraTech | Login</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="logo.png">
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Calculadora.html">Calculadora</a></li>
+                <li><a href="Monitoramento.html">Monitoramento</a></li>
+                <li><a href="Sobre nós.html">Sobre Nós</a></li>
+                <li><u>Login</u></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="card">
+                <h2>Bem-Vindo(a)</h2>
+                <div class="form-box">
+
+                    <h4>Nome de usuário ou e-mail: </h4>
+                    <input class="input_usuario" type="text" placeholder="Usuário ou e-mail">
+
+                    <h4>Senha: </h4>
+                    <input class="input_senha" type="password" placeholder="Senha">
+
+                    <div class="botoes">
+                        <button class="botao" onclick="registrar()">Entrar</button>
+                        <button class="botao" onclick="cadastro()">Cadastrar</button>
+                        <span><a href="">Esqueceu a senha?</a></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="frase">
+            <p>SafraTech © 2022 </p>  
+        </div>
+
+        <div class="logos">
+            <img src="facebook-logo.png">
+            <img src="instagram-logo.png">
+            <img src="email-logo.png">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function registrar(){
+        window.location.href = "Home.html"
+    }
+    function cadastro(){
+        window.location.href = "Cadastro.html"
+    }
+</script>

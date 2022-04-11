@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sobre nós css.css">
+    <link rel="icon" type="imagem/png" href="logo icone.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>SafraTech | Sobre Nós</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="logo.png">
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Calculadora.html">Calculadora</a></li>
+                <li><a href="Monitoramento.html">Monitoramento</a></li>
+                <li><u>Sobre Nós</u></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="card">
+    
+                <div class="titulo">
+                    <h2>Sobre Nós</h2>
+                </div>
+
+                <div class="subtitulo">
+                    <h2>Sobre a Empresa</h2>
+                </div>
+
+                <div class="conteudo">
+                    <p>Nós Somos uma Empresa especializada em monitoramento por meio de sensores na área de Agronegócio.
+                         Por uso de Gráficos em nosso site, é capaz fazer o <a href="Monitoramento.html">Monitoramento</a> do seu plantio
+                        com precisão, e assim tomar a melhor decisão para ter um plantio saudável.</p>
+                        <div class="graficos">
+                            <div>
+                                <canvas id="myChart" style="position: relative; height:30vh; width:30vw"></canvas>
+                            </div>
+                        </div>
+                        <h3>Somos Agéis</h3>
+                        <p>A rapidez no atendimento e na resolução das demandas é uma de nossas características. 
+                            Nós apreciamos o valor do seu tempo.</p>
+                        <h3>Compromisso</h3>
+                        <p>Nós somos compromissados com você, estamos disponíveis a todo momento</p>
+                </div>
+
+                
+            </div>
+        </div>  
+    </div>
+    <div class="footer">
+        <div class="frase">
+            <p>SafraTech © 2022 </p>  
+        </div>
+
+        <div class="logos">
+            <img src="facebook-logo.png">
+            <img src="instagram-logo.png">
+            <img src="email-logo.png">
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    const labels = [
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [30, 29, 28, 25, 22, 23, 70],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: '#1dacd6',
+            borderColor: '#1dacd6',
+            data: [55, 60, 58, 52, 50, 49, 70],
+        }
+        ]
+    };
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+
+</script>
+
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>
+
+</html>

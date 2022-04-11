@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="monitoramento css.css">
+    <link rel="icon" type="imagem/png" href="logo icone.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>SafraTech | Monitoramento</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="logo.png">
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Calculadora.html">Calculadora</a></li>
+                <li><u>Monitoramento</u></li>
+                <li><a href="Sobre nós.html">Sobre Nós</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="card">
+    
+                <div class="titulo">
+                    <h2>Exemplo dos Gráfico</h2>
+                </div>
+
+                <div class="graficos">
+                    <div>
+                        <canvas id="myChart" style="position: relative; height:40vh; width:40vw"></canvas>
+                    </div>
+
+                    <div>
+                        <canvas id="myChart2" style="position: relative; height:40vh; width:40vw"></canvas>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>  
+    </div>
+    <div class="footer">
+        <div class="frase">
+            <p>SafraTech © 2022 </p>  
+        </div>
+
+        <div class="logos">
+            <img src="facebook-logo.png">
+            <img src="instagram-logo.png">
+            <img src="email-logo.png">
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    const labels = [
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [30, 29, 28, 25, 22, 23, 70],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: '#1dacd6',
+            borderColor: '#1dacd6',
+            data: [55, 60, 58, 52, 50, 49, 70],
+        }
+        ]
+    };
+    const labels2 = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [22, 24, 27, 23, 20, 18, 80],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: '#1dacd6',
+            borderColor: '#1dacd6',
+            data: [60, 68, 65, 62, 63, 60, 80],
+        }
+        ]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {}
+    };
+
+
+    const config2 = {
+        type: 'bar',
+        data: data2,
+        options: {}
+    };
+</script>
+
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        config2
+    );
+</script>
+
+</html>

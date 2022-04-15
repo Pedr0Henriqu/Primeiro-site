@@ -187,7 +187,7 @@ h4{
 .footer{
     display: flex;
     flex-direction: column;
-    background-image: url(capa\ site.jpg);   
+    background-image: linear-gradient(rgb(89, 150, 207), white);   
     background-color: white;
     opacity: 0.9;
     width: 100%;
